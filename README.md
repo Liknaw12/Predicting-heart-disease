@@ -1,6 +1,8 @@
 # Predicting Heart Disease with a Random Forest Classifier
-#Group 6 Memebers
- Student  Name            ID No.
+  <img width="297" height="178" alt="image" src="https://github.com/user-attachments/assets/7b26e4b2-9ee4-4fa8-9528-8951f32f681c" />
+
+# Group 6 Memebers
+# Student  Name          ID No.
 1.	Anbesaw Alemu ………………...0656
 2.	Amarech Habtamu………….…..0609
 3.	Hana Sebsbe ……………………...0630
@@ -29,7 +31,7 @@ The model applies a **Random Forest Classifier** and analyzes the key factors in
 - Google Colab  
 - Kaggle Dataset
   
-  ##Conclusion:
+## Conclusion:
 - The Random Forest model achieved good predictive accuracy on this dataset.
 - Important factors influencing heart disease likely include Age, Chest Pain Type, and Cholesterol. 
 - As we observed from the output and when we compared Age, Chest Pain Type, and Cholesterol to predict heart disease.
