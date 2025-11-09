@@ -1,5 +1,8 @@
 # Predicting Heart Disease with a Random Forest Classifier
   <img width="297" height="178" alt="image" src="https://github.com/user-attachments/assets/7b26e4b2-9ee4-4fa8-9528-8951f32f681c" />
+# DEBRE TABOR UNIVERSITY 
+# GAFAT INSTITUITE OF TECHNOLOGY
+# DEPARTMENT OF COMPUTER SCIENCE
 
 # Group 6 Memebers
 # Student  Name          ID No.
