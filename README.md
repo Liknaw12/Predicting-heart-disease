@@ -29,7 +29,7 @@ The model applies a **Random Forest Classifier** and analyzes the key factors in
 5. Visualize performance metrics and feature correlations.
 
 ## Key Results & Visualizations
-- **Accuracy:** ~75–80% which 
+- **Accuracy:** ~71–75% which 
 - **Most Influential Features:** `ChestPainType`, `Cholesterol`, `Age`  
 - Correlation heatmap and confusion matrix included in notebook outputs.
 - Also the output of this notebook includes Age, ChestPainType, and Cholesterol distributions with heart disease in the graph form. 
