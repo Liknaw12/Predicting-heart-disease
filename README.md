@@ -12,10 +12,10 @@
 # Student  Name          ID No.
 1.	Anbesaw Alemu ………………...0656
 2.	Amarech Habtamu………….…..0609
-3.	Hana Sebsbe ……………………...0630
-4.	Liknaw Abiyu…………………....0442
-5.	Tsion Fikre ……………………..…0457
-6.	Wulta Mulu …………………....…0507       
+3.	Hana Sebsbe ……………………....0630
+4.	Liknaw Abiyu………………….....0442
+5.	Tsion Fikre ………………….…..…0457
+6.	Wulta Mulu ………………….....…0507       
 
 ## Project Overview
 This project uses the **Heart Failure Prediction Dataset** to predict the presence of heart disease based on patient medical attributes.  
