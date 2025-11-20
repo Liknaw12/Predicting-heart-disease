@@ -18,21 +18,140 @@
 6.	Wulta Mulu ………………….....…0507       
 
 ## Project Overview
-This project uses the **Heart Failure Prediction Dataset** to predict the presence of heart disease based on patient medical attributes.  
-The model applies a **Random Forest Classifier** and analyzes the key factors influencing heart disease risk.
+Heart Disease Prediction using Random Forest
 
-## Objectives
-1. Load and preprocess the dataset from Kaggle.  
-2. Perform exploratory data analysis (EDA) to uncover patterns.  
-3. Encode categorical variables and scale numerical features.  
-4. Train and evaluate a Random Forest Classifier.  
-5. Visualize performance metrics and feature correlations.
+A machine learning project that predicts the likelihood of heart disease using patient health metrics.
+The model is built using a Random Forest Classifier and implemented in Python inside a Google Colab notebook.
 
-## Key Results & Visualizations
-- **Accuracy:** ~71–75% which 
-- **Most Influential Features:** `ChestPainType`, `Cholesterol`, `Age`  
-- Correlation heatmap and confusion matrix included in notebook outputs.
-- Also the output of this notebook includes Age, ChestPainType, and Cholesterol distributions with heart disease in the graph form. 
+🚀 Project Features
+
+Load dataset directly in Colab
+
+Clean and preprocess raw data
+
+Convert categorical features (e.g., ChestPainType) into numeric form
+
+Train a Random Forest model
+
+Evaluate using accuracy, classification report, and confusion matrix
+
+Ready-to-use notebook for medical prediction research
+
+📂 Dataset
+
+Upload your dataset manually in Colab using:
+
+from google.colab import files
+files.upload()
+
+
+The dataset must include standard heart disease features such as:
+
+Age
+
+Sex
+
+ChestPainType
+
+Resting Blood Pressure
+
+Cholesterol
+
+Fasting Blood Sugar
+
+Resting ECG
+
+Max Heart Rate
+
+Exercise-Induced Angina
+
+Oldpeak
+
+ST_Slope
+
+Target (0 = No disease, 1 = Disease)
+
+🧹 Data Preprocessing
+
+Main preprocessing steps:
+
+Checking dataset structure
+
+Handling missing values
+
+Removing duplicates
+
+Label encoding categorical features
+
+Converting ChestPainType into numeric
+
+Splitting dataset into train/test sets
+
+Example:
+
+from sklearn.preprocessing import LabelEncoder
+
+le = LabelEncoder()
+df['ChestPainType'] = le.fit_transform(df['ChestPainType'])
+
+🤖 Model Used: Random Forest
+
+The prediction model:
+
+from sklearn.ensemble import RandomForestClassifier
+
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+📊 Model Evaluation
+
+The notebook outputs:
+
+Accuracy Score
+Classification Report
+Confusion Matrix
+
+
+Example evaluation code:
+
+from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
+
+y_pred = model.predict(X_test)
+
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print(classification_report(y_test, y_pred))
+print(confusion_matrix(y_test, y_pred))
+
+📦 Installation
+
+Install dependencies:
+
+pip install pandas numpy scikit-learn matplotlib seaborn kaggle
+
+▶️ How to Run
+
+Open Google Colab
+
+Upload the notebook:
+
+Predicting_Heart_Disease_RF.ipynb
+
+
+Upload your dataset when prompted
+
+Run all cells sequentially
+
+🧪 Output
+
+Cleaned dataset preview
+
+Encoded & processed dataset
+
+Accuracy score
+
+Precision, Recall, F1-score
+
+Confusion matrix
 
 ## Technologies Used
 - Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn)  
