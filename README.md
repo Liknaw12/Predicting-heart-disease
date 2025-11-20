@@ -24,7 +24,7 @@ A machine learning project that predicts the likelihood of heart disease using p
 The model is built using a Random Forest Classifier and implemented in Python inside a Google Colab notebook.
 
 ## Project Features
-#### Install dependencies 
+Install dependencies 
 Load dataset directly in Colab
 
 Clean and preprocess raw data
@@ -39,7 +39,7 @@ Ready-to-use notebook for medical prediction research
 
 ## Dataset
 
-Upload your dataset manually in Colab using:
+Upload the dataset manually in Colab using:
 
 from google.colab import files
 files.upload()
@@ -88,32 +88,14 @@ Converting ChestPainType into numeric
 Splitting dataset into train/test sets
 
 ## Model Used: Random Forest
-
-### The prediction model:
-
-from sklearn.ensemble import RandomForestClassifier
-
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
-
-## Model Evaluation
+ 
+ ## Model Evaluation
 
 The notebook outputs:
 
 Accuracy Score
 Classification Report
 Confusion Matrix
-
-
-Example evaluation code:
-
-from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
-
-y_pred = model.predict(X_test)
-
-print("Accuracy:", accuracy_score(y_test, y_pred))
-print(classification_report(y_test, y_pred))
-print(confusion_matrix(y_test, y_pred))
 
 ## How to Run
 
