@@ -18,13 +18,13 @@
 6.	Wulta Mulu ………………….....…0507       
 
 ## Project Overview
-Heart Disease Prediction using Random Forest
+### Heart Disease Prediction using Random Forest
 
 A machine learning project that predicts the likelihood of heart disease using patient health metrics.
 The model is built using a Random Forest Classifier and implemented in Python inside a Google Colab notebook.
 
-🚀 Project Features
-
+## Project Features
+#### Install dependencies 
 Load dataset directly in Colab
 
 Clean and preprocess raw data
@@ -37,7 +37,7 @@ Evaluate using accuracy, classification report, and confusion matrix
 
 Ready-to-use notebook for medical prediction research
 
-📂 Dataset
+## Dataset
 
 Upload your dataset manually in Colab using:
 
@@ -45,7 +45,7 @@ from google.colab import files
 files.upload()
 
 
-The dataset must include standard heart disease features such as:
+### The dataset must include standard heart disease features such as:
 
 Age
 
@@ -71,7 +71,7 @@ ST_Slope
 
 Target (0 = No disease, 1 = Disease)
 
-🧹 Data Preprocessing
+## Data Preprocessing
 
 Main preprocessing steps:
 
@@ -87,23 +87,16 @@ Converting ChestPainType into numeric
 
 Splitting dataset into train/test sets
 
-Example:
+## Model Used: Random Forest
 
-from sklearn.preprocessing import LabelEncoder
-
-le = LabelEncoder()
-df['ChestPainType'] = le.fit_transform(df['ChestPainType'])
-
-🤖 Model Used: Random Forest
-
-The prediction model:
+### The prediction model:
 
 from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
-📊 Model Evaluation
+## Model Evaluation
 
 The notebook outputs:
 
@@ -122,13 +115,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 print(confusion_matrix(y_test, y_pred))
 
-📦 Installation
-
-Install dependencies:
-
-pip install pandas numpy scikit-learn matplotlib seaborn kaggle
-
-▶️ How to Run
+## How to Run
 
 Open Google Colab
 
@@ -141,7 +128,7 @@ Upload your dataset when prompted
 
 Run all cells sequentially
 
-🧪 Output
+## Output
 
 Cleaned dataset preview
 
